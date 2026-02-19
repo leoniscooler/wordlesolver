@@ -477,11 +477,11 @@
   <div class="methodology" id="methodSection" style="display:none">
     <h3>How it works</h3>
     <p>
-      Each guess is chosen to <strong>maximize Shannon entropy</strong> &mdash; the expected
-      information gained from the color pattern. This partitions the remaining candidates
-      into the most evenly-sized groups, narrowing the search space as fast as possible.
-      The first guess (<strong>SALET</strong>) yields ~6.2 bits of information on average,
-      eliminating roughly 97% of candidates in one move.
+      The solver tries to learn as much as possible from every guess to maximize 
+      Shannon entropy. For each step, it looks at all the words that are still 
+      possible and picks the guess that best splits them into groups based on 
+      the colors (green, yellow, gray). This cuts down the list of choices very 
+      quickly so the answer can usually be found in just a few moves.
     </p>
   </div>
 </div>
