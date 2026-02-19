@@ -826,7 +826,7 @@ function showResult(answer, numGuesses) {
 
 function buildShareText(answer, guesses) {
   const num = puzzleNumber();
-  let text = `Wordle Solver ${num} ${guesses.length}/6\n\n`;
+  let text = `AI Wordle Solver ${num} ${guesses.length}/6\n\n`;
   for (const g of guesses) {
     text += patternEmoji(g.pattern) + '\n';
   }
